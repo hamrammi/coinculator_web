@@ -5,7 +5,7 @@ import Navigation from '../Navigation/Navigation'
 import Goal from '../Goal/Goal'
 import List from '../List/List'
 
-function BootstrapApp () {
+const BootstrapApp: React.FC = () => {
   return (
     <Router>
       <App>

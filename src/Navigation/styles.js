@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from 'react-router-dom'
 
-export const NavigationBar = styled.div`
+export const NavigationBar = styled('div')`
   background-color: #282c34;
   height: 10vh;
   display: flex;

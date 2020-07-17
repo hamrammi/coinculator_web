@@ -1,6 +1,7 @@
 import styled, { keyframes } from 'styled-components'
 
-export const App = styled.div`
+export const App = styled('div').attrs(() => ({
+}))`
   background-color: #28304a;
   display: flex;
   flex-direction: column;

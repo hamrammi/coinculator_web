@@ -1,12 +1,13 @@
 import React from 'react'
 import GoalMeter from './GoalMeter'
+import { GoalContainer } from './styles'
 
-const Goal = () => {
+const Goal: React.FC = () => {
   return (
-    <div>
-      <GoalMeter dashes={40}/>
+    <GoalContainer>
+      <GoalMeter dashes={20}/>
       <div>This is main component</div>
-    </div>
+    </GoalContainer>
   )
 }
 

@@ -5,17 +5,17 @@ interface Props {
   dashes: number
 }
 
-function GoalMeter (props: Props) {
+const GoalMeter: React.FC<Props> = ({ dashes }) => {
   let range: number[] = []
-  for (let i = 0; i < props.dashes; i++) {
+  for (let i = 0; i < dashes; i++) {
     range = range.concat(i)
   }
 
-  // let step = 360 / props.dashes
-  let step = 240 / props.dashes
+  // let step = 360 / dashes
+  let step = 240 / dashes
 
   return (
-    <Scale dashed={props.dashes}>
+    <Scale>
       {range.map(x => {
         return (
           <ScaleInner key={x} dash={x} step={step}>
